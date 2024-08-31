@@ -1,0 +1,9 @@
+.navbar>.navbar-nav>li{
+    padding-left: 25px;
+}
+.motto{
+    display:flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
