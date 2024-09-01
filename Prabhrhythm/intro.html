@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Test Form</title>
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Candidate Test Form</h1>
+        <form>
+            <label for="goals">What are your future goals?</label>
+            <textarea id="goals" name="goals" rows="3" required></textarea>
+
+            <label for="dream-job">Dream Job:</label>
+            <input type="text" id="dream-job" name="dream-job" required>
+
+            <label for="dream-company">Dream Company:</label>
+            <input type="text" id="dream-company" name="dream-company" required>
+
+            <label for="interest">Interests:</label>
+            <textarea id="interest" name="interest" rows="3" required></textarea>
+
+            <label for="motivation">What motivates you?</label>
+            <textarea id="motivation" name="motivation" rows="2" required></textarea>
+
+            <label for="marks">Marks in 10th Grade:</label>
+            <input type="number" id="marks" name="marks" required>
+
+            <label>What are you looking for?</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="education" value="10th"> 10th Grade</label>
+                <label><input type="checkbox" name="education" value="12th"> 12th Grade</label>
+                <label><input type="checkbox" name="education" value="undergrad"> Undergrad</label>
+                <label><input type="checkbox" name="education" value="postgrad"> Postgrad</label>
+                <label><input type="checkbox" name="education" value="phd"> PhD</label>
+                <label><input type="checkbox" name="education" value="competitive"> Competitive Exams</label>
+               
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
