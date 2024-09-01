@@ -3,44 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candidate Test Form</title>
-    <link rel="stylesheet" href="intro.css">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Candidate Test Form</h1>
-        <form>
-            <label for="goals">What are your future goals?</label>
-            <textarea id="goals" name="goals" rows="3" required></textarea>
+    <div class="form-container">
+        <div class="contact-form">
+            <h1>Tell Us About Yourself</h1>
+            <p class="intro-text"><i>Just be your awesome self!</i></p>
+            <form action="#">
+                <div class="form-group">
+                    <label for="first-name"><b>What's your dream job or ambition? Let us know your goals!</b></label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name"><b>Where do you see yourself in 5 years? We’re curious!</b></label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><b>Tell us about your interests so we can keep you in the loop with relevant updates!</b></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><b>Got any exciting thoughts or ideas you want to share with us? We’re all ears!</b></label>
+                    <textarea id="phone" name="phone" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="education"><b>What are you looking for? (Select all that apply)</b></label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="education" value="10th"> 10th Grade</label>
+                        <label><input type="checkbox" name="education" value="12th"> 12th Grade</label>
+                        <label><input type="checkbox" name="education" value="undergrad"> Undergrad</label>
+                        <label><input type="checkbox" name="education" value="postgrad"> Postgrad</label>
+                        <label><input type="checkbox" name="education" value="phd"> PhD</label>
+                        <label><input type="checkbox" name="education" value="competitive"> Competitive Exams</label>
+                    </div>
+                </div>
 
-            <label for="dream-job">Dream Job:</label>
-            <input type="text" id="dream-job" name="dream-job" required>
+                <!-- Dropdown Menu -->
+                <div class="form-group">
+                    <label for="dropdown"><b>Select your preferred method of contact:</b></label>
+                    <select id="dropdown" name="contact-method" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="email">Email</option>
+                        <option value="phone">Phone</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
 
-            <label for="dream-company">Dream Company:</label>
-            <input type="text" id="dream-company" name="dream-company" required>
+                <!-- Radio Buttons -->
+                <div class="form-group">
+                    <label><b>Preferred Contact Time:</b></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="contact-time" value="morning" required> Morning</label>
+                        <label><input type="radio" name="contact-time" value="afternoon"> Afternoon</label>
+                        <label><input type="radio" name="contact-time" value="evening"> Evening</label>
+                    </div>
+                </div>
 
-            <label for="interest">Interests:</label>
-            <textarea id="interest" name="interest" rows="3" required></textarea>
-
-            <label for="motivation">What motivates you?</label>
-            <textarea id="motivation" name="motivation" rows="2" required></textarea>
-
-            <label for="marks">Marks in 10th Grade:</label>
-            <input type="number" id="marks" name="marks" required>
-
-            <label>What are you looking for?</label>
-            <div class="checkbox-group">
-                <label><input type="checkbox" name="education" value="10th"> 10th Grade</label>
-                <label><input type="checkbox" name="education" value="12th"> 12th Grade</label>
-                <label><input type="checkbox" name="education" value="undergrad"> Undergrad</label>
-                <label><input type="checkbox" name="education" value="postgrad"> Postgrad</label>
-                <label><input type="checkbox" name="education" value="phd"> PhD</label>
-                <label><input type="checkbox" name="education" value="competitive"> Competitive Exams</label>
                
-            </div>
 
-            <button type="submit">Submit</button>
-        </form>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
