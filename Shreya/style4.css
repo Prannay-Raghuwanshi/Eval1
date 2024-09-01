@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.feature-box {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+}
+
+.feature-box .icon img {
+    width: 50px;
+}
+
+.feature-box h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
