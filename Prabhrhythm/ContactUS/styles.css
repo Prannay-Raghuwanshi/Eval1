@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #296794;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #f39c12;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.contact-option {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    width: 28%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-option h2 {
+    font-size: 1.5em;
+    color: #296794;
+    margin-bottom: 10px;
+}
+
+.contact-option p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.contact-button {
+    background-color: #296794;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #f39c12;
+}
+
+.follow-us h2 {
+    font-size: 2em;
+    color: #296794;
+    margin-bottom: 15px;
+}
+
+.follow-us p {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.social-icons a img {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+    filter: none;
+}
