@@ -96,7 +96,6 @@ h1 span {
 }
 
 .social-icons a img {
-    filter: grayscale(100%);
     transition: filter 0.3s ease;
 }
 
