@@ -1,0 +1,134 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.chat-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+
+header {
+    background-color: #4A90E2;
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.chatbox {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.chat-header h2 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+}
+
+.chat-header p {
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+
+.chat-content {
+    background-color: #f7f9fc;
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.chat-content div {
+    margin-bottom: 0.8rem;
+    padding: 0.5rem;
+    background-color: #e8f1ff;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #333;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.chat-input {
+    display: flex;
+    align-items: center;
+}
+
+textarea {
+    width: 80%;
+    height: 50px;
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+button {
+    background-color: #4A90E2;
+    border: none;
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+
+footer {
+    background-color: #4A90E2;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
